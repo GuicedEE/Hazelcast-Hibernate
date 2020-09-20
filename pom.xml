@@ -22,45 +22,38 @@
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>hibernate-jcache</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.persistence</groupId>
             <artifactId>guiced-hazelcast</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>cache-annotations-ri-guice</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>hazelcast-all</artifactId>
-            <type>jar</type>
         </dependency>
 
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>hazelcast-hibernate</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>com.guicedee.services</groupId>
             <artifactId>commons-io</artifactId>
-            <type>jar</type>
         </dependency>
 
         <dependency>
