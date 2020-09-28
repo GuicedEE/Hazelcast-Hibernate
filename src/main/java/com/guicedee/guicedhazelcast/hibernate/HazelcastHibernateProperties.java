@@ -4,7 +4,7 @@ import com.guicedee.guicedhazelcast.HazelcastProperties;
 import com.guicedee.guicedhazelcast.services.HazelcastClientPreStartup;
 import com.guicedee.guicedpersistence.services.IPropertiesEntityManagerReader;
 import com.guicedee.logger.LogFactory;
-import com.oracle.jaxb21.PersistenceUnit;
+import org.hibernate.jpa.boot.internal.ParsedPersistenceXmlDescriptor;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +22,7 @@ public class HazelcastHibernateProperties
 	private static final Logger log = LogFactory.getLog(HazelcastProperties.class);
 
 	@Override
-	public Map<String, String> processProperties(PersistenceUnit persistenceUnit, Properties incomingProperties)
+	public Map<String, String> processProperties(ParsedPersistenceXmlDescriptor persistenceUnit, Properties incomingProperties)
 	{
 		Map<String, String> props = new HashMap<>();
 
