@@ -3,8 +3,8 @@ package com.guicedee.guicedhazelcasthibernate.entities;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 @Entity

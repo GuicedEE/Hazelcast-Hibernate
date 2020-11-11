@@ -27,7 +27,7 @@ public class HazelcastHibernateProperties
 		Map<String, String> props = new HashMap<>();
 
 		props.put("hibernate.cache.region.factory_class", "org.hibernate.cache.jcache.internal.JCacheRegionFactory");
-		props.put("hibernate.javax.cache.provider", "com.hazelcast.client.cache.impl.HazelcastClientCachingProvider");
+		props.put("hibernate.jakarta.cache.provider", "com.hazelcast.client.cache.impl.HazelcastClientCachingProvider");
 
 		if (!incomingProperties.containsKey("hibernate.cache.use_second_level_cache"))
 		{

@@ -8,7 +8,7 @@ import com.guicedee.logger.LogFactory;
 import com.guicedee.logger.logging.LogColourFormatter;
 import org.junit.jupiter.api.Test;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import java.util.logging.Level;
 
 public class GuicedPersistenceBindingTest
