@@ -3,6 +3,8 @@ module com.guicedee.guicedhazelcast.hibernate {
 
 	requires transitive com.guicedee.guicedhazelcast;
 	requires com.hazelcast.hibernate;
+	
+	requires static lombok;
 
 	requires transitive com.guicedee.guicedpersistence;
 	requires transitive org.hibernate.orm.jcache;
