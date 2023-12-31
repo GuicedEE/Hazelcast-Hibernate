@@ -14,6 +14,6 @@ module guiced.hazelcast.hibernate.tests {
 	
 	provides IGuiceModule with TestDBPrivateModule;
 	
-	opens com.guicedee.guicedhazelcasthibernate to org.junit.platform.commons;
-	opens com.guicedee.guicedhazelcasthibernate.entities to org.junit.platform.commons, org.hibernate.orm.core;
+	opens com.guicedee.guicedhazelcasthibernate to org.junit.platform.commons,com.google.guice;
+	opens com.guicedee.guicedhazelcasthibernate.entities to org.junit.platform.commons, org.hibernate.orm.core,com.google.guice;
 }
