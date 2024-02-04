@@ -16,15 +16,10 @@ public class GuicedPersistenceBindingTest
 	public void testMe() throws InterruptedException
 	{
 		HazelcastProperties.setStartLocal(true);
-		
 		System.setProperty("GROUP_NAME", "test");
-		
 		GuiceContext.inject();
-
 		UnitOfWork uw = GuiceContext.get(UnitOfWork.class, TestCustomPersistenceLoader.class);
 		EntityManager em = GuiceContext.get(EntityManager.class, TestCustomPersistenceLoader.class);
 		System.out.println("open : " + em.isOpen());
-
-		BTMAutomatedTransactionHandler.setActive(true);
 	}
 }
