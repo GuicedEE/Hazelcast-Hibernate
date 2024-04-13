@@ -3,12 +3,10 @@ package com.guicedee.guicedhazelcasthibernate;
 import com.google.inject.persist.UnitOfWork;
 import com.guicedee.client.*;
 import com.guicedee.guicedhazelcast.HazelcastProperties;
-import com.guicedee.guicedpersistence.btm.implementation.BTMAutomatedTransactionHandler;
 
 import org.junit.jupiter.api.Test;
 
 import jakarta.persistence.EntityManager;
-import java.util.logging.Level;
 
 public class GuicedPersistenceBindingTest
 {
