@@ -16,8 +16,8 @@ public class GuicedPersistenceBindingTest
 		HazelcastProperties.setStartLocal(true);
 		System.setProperty("GROUP_NAME", "test");
 		IGuiceContext.getContext().inject();
-		UnitOfWork uw = IGuiceContext.get(UnitOfWork.class, TestCustomPersistenceLoader.class);
-		EntityManager em = IGuiceContext.get(EntityManager.class, TestCustomPersistenceLoader.class);
+		UnitOfWork uw = IGuiceContext.get(UnitOfWork.class);
+		EntityManager em = IGuiceContext.get(EntityManager.class);
 		System.out.println("open : " + em.isOpen());
 	}
 }
