@@ -7,8 +7,8 @@ module guiced.hazelcast.hibernate.tests {
 	
 	
 	requires org.junit.jupiter.api;
-	requires org.slf4j;
-	requires org.slf4j.simple;
+	//requires org.slf4j;
+	//requires org.slf4j.simple;
 	requires com.google.guice.extensions.persist;
 	requires com.guicedee.guicedpersistence;
 	
