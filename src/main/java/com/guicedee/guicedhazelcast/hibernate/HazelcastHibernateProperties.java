@@ -27,7 +27,14 @@ public class HazelcastHibernateProperties
 		
 		props.put("hibernate.cache.region.factory_class", "org.hibernate.cache.jcache.internal.JCacheRegionFactory");
 		props.put("hibernate.javax.cache.provider", "com.hazelcast.client.cache.impl.HazelcastClientCachingProvider");
-		
+		props.put("hibernate.cache.use_minimal_puts", "true");
+		props.put("hibernate.cache.use_second_level_cache", "true");
+		props.put("hibernate.cache.use_query_cache", "true");
+		props.put("hibernate.cache.hazelcast.use_native_client", "true");
+		props.put("hibrenate.cache.hazelcast.eviction.size", "1000");
+		props.put("hibrenate.cache.hazelcast.time-to-live-seconds", "300");
+		props.put("hibrenate.cache.hazelcast.max-idle-seconds", "500");
+
 		if (!incomingProperties.containsKey("hibernate.cache.use_second_level_cache"))
 		{
 			props.put("hibernate.cache.use_second_level_cache", "true");
