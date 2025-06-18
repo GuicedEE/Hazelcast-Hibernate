@@ -6,6 +6,8 @@ import com.guicedee.guicedpersistence.db.DatabaseModule;
 import org.hibernate.jpa.boot.internal.ParsedPersistenceXmlDescriptor;
 
 import jakarta.validation.constraints.NotNull;
+import org.hibernate.jpa.boot.spi.PersistenceUnitDescriptor;
+
 import java.lang.annotation.Annotation;
 import java.util.Properties;
 
@@ -21,7 +23,7 @@ public class TestDBPrivateModule
 	}
 
 	@Override
-	protected @NotNull ConnectionBaseInfo getConnectionBaseInfo(ParsedPersistenceXmlDescriptor unit, Properties filteredProperties)
+	protected @NotNull ConnectionBaseInfo getConnectionBaseInfo(PersistenceUnitDescriptor unit, Properties filteredProperties)
 	{
 		return new BTMConnectionBaseInfo();
 	}

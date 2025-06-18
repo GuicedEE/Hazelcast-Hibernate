@@ -5,6 +5,7 @@ import com.guicedee.guicedhazelcast.services.HazelcastClientPreStartup;
 import com.guicedee.guicedpersistence.services.IPropertiesEntityManagerReader;
 import lombok.extern.java.Log;
 import org.hibernate.jpa.boot.internal.ParsedPersistenceXmlDescriptor;
+import org.hibernate.jpa.boot.spi.PersistenceUnitDescriptor;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +22,7 @@ public class HazelcastHibernateProperties
 {
 	
 	@Override
-	public Map<String, String> processProperties(ParsedPersistenceXmlDescriptor persistenceUnit, Properties incomingProperties)
+	public Map<String, String> processProperties(PersistenceUnitDescriptor persistenceUnit, Properties incomingProperties)
 	{
 		Map<String, String> props = new HashMap<>();
 		
@@ -88,7 +89,7 @@ public class HazelcastHibernateProperties
 	}
 	
 	@Override
-	public boolean applicable(ParsedPersistenceXmlDescriptor persistenceUnit)
+	public boolean applicable(PersistenceUnitDescriptor persistenceUnit)
 	{
 		return true;
 	}
